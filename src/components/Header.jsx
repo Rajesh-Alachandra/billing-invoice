@@ -3,9 +3,9 @@ import logo from '../assets/logo.png'
 import sun from '../assets/icon-sun.svg'
 import moon from '../assets/icon-moon.svg'
 import useDarkMode from '../hooks/useDarkMode';
-import profile from '../assets/image-avatar.jpg'
+import profile from '../assets/img/blank-profile.png'
 import { motion } from 'framer-motion'
-
+import Logo from "../assets/img/Logo.png"
 
 
 function Header() {
@@ -33,7 +33,7 @@ function Header() {
 
         {/* Logo img */}
 
-        <img src={logo} className='h-[80px] absolute top-0 left-0' alt="logo-image" />
+        <img src={Logo} className='h-[80px] absolute top-0 left-0' alt="logo-image" />
 
         {/* Right side */}
         <div className='  flex  items-center  '>
@@ -64,10 +64,10 @@ function Header() {
         <div className=' fixed  z-50  w-[100px] rounded-r-3xl  flex-col  top-0 left-0 h-screen dark:bg-[#1E2139]  bg-[#373b53]'>
 
 
-          <div className=' h-full w-full flex flex-col justify-between items-center'>
+          <div className=' h-full w-full flex flex-col justify-between items-center' >
             {/* Logo */}
 
-            <img src={logo} className="relative" />
+            <img src={Logo} className="relative" style={{marginTop:"40px"}}/>
 
             {/* Bottom Side */}
             <div>

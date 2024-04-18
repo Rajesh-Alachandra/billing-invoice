@@ -29,7 +29,7 @@ function App() {
             <Route element={<Center />} path="/center" />
             <Route
               element={<InvoiceInfo onDelete={onDelete} />}
-              path="/invoice"
+              path="/center/invoice"
             />
           </Routes>
         </AnimatePresence>

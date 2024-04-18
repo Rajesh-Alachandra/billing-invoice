@@ -193,6 +193,12 @@ function InvoiceInfo({ onDelete }) {
                             </h1>
 
                         </div>
+<div className='btn-div'>
+
+                        <div className=' ml-3 text-start  text-white bg-violet-500 hover:opacity-80 p-3 px-7 rounded-full proceed-btn'>
+                                <button>Proceed</button>
+                        </div>
+</div>
 
                     </div>
                 </div>

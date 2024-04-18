@@ -10,3 +10,14 @@ margin-bottom: 20px;
     width: 100%;
     object-fit: contain;
 }
+
+.proceed-btn{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin-top: 20px;
+}
+.btn-div{
+display: flex;
+justify-content: end;
+}
