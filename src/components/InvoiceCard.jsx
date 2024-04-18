@@ -32,7 +32,7 @@ function InvoiceCard({ invoice }) {
                 <div className='  flex  items-center '>
 
                     <h1 className=' text-xl mr-8  dark:text-white'>
-                        £ {invoice.total}
+                    ₹ {invoice.total}
                     </h1>
 
 
@@ -60,7 +60,7 @@ function InvoiceCard({ invoice }) {
                         Due {invoice.paymentDue}
                     </h2>
                     <h1 className=' text-xl  dark:text-white'>
-                        £ {invoice.total}
+                    ₹ {invoice.total}
                     </h1>
                 </div>
 

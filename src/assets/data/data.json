@@ -5,20 +5,20 @@
     "paymentDue": "2021-8-19",
     "description": "Re-branding",
     "paymentTerms": 1,
-    "clientName": "Jensen Huang",
-    "clientEmail": "jensenh@mail.com",
+    "clientName": "Jayesh Reddy",
+    "clientEmail": "jayeshr@mail.com",
     "status": "paid",
     "senderAddress": {
-      "street": "19 Union Terrace",
-      "city": "London",
-      "postCode": "E1 3EZ",
-      "country": "United Kingdom"
+      "street": "15 Jubilee Park Road",
+      "city": "Hyderabad",
+      "postCode": "500001",
+      "country": "India"
     },
     "clientAddress": {
-      "street": "106 Kendell Street",
-      "city": "Sharrington",
-      "postCode": "NR24 5WQ",
-      "country": "United Kingdom"
+      "street": "22 Jubilee Hills Road",
+      "city": "Hyderabad",
+      "postCode": "500033",
+      "country": "India"
     },
     "items": [
       {
@@ -36,20 +36,20 @@
     "paymentDue": "2021-9-20",
     "description": "Graphic Design",
     "paymentTerms": 30,
-    "clientName": "Alex Grim",
-    "clientEmail": "alexgrim@mail.com",
+    "clientName": "Amit Kumar",
+    "clientEmail": "amitkumar@mail.com",
     "status": "pending",
     "senderAddress": {
-      "street": "19 Union Terrace",
-      "city": "London",
-      "postCode": "E1 3EZ",
-      "country": "United Kingdom"
+      "street": "15 Jubilee Park Road",
+      "city": "Hyderabad",
+      "postCode": "500001",
+      "country": "India"
     },
     "clientAddress": {
-      "street": "84 Church Way",
-      "city": "Bradford",
-      "postCode": "BD1 9PB",
-      "country": "United Kingdom"
+      "street": "14 Banjara Hills Lane",
+      "city": "Hyderabad",
+      "postCode": "500034",
+      "country": "India"
     },
     "items": [
       {
@@ -73,20 +73,20 @@
     "paymentDue": "2021-10-01",
     "description": "Website Redesign",
     "paymentTerms": 7,
-    "clientName": "John Morrison",
-    "clientEmail": "jm@myco.com",
+    "clientName": "Rajesh Patel",
+    "clientEmail": "rajeshp@mail.com",
     "status": "paid",
     "senderAddress": {
-      "street": "19 Union Terrace",
-      "city": "London",
-      "postCode": "E1 3EZ",
-      "country": "United Kingdom"
+      "street": "15 Jubilee Park Road",
+      "city": "Hyderabad",
+      "postCode": "500001",
+      "country": "India"
     },
     "clientAddress": {
-      "street": "79 Dover Road",
-      "city": "Westhall",
-      "postCode": "IP19 3PF",
-      "country": "United Kingdom"
+      "street": "8 Hitech City Avenue",
+      "city": "Hyderabad",
+      "postCode": "500081",
+      "country": "India"
     },
     "items": [
       {
@@ -104,20 +104,20 @@
     "paymentDue": "2021-10-12",
     "description": "Logo Concept",
     "paymentTerms": 1,
-    "clientName": "Alysa Werner",
-    "clientEmail": "alysa@email.co.uk",
+    "clientName": "Priya Sharma",
+    "clientEmail": "priyas@mail.com",
     "status": "pending",
     "senderAddress": {
-      "street": "19 Union Terrace",
-      "city": "London",
-      "postCode": "E1 3EZ",
-      "country": "United Kingdom"
+      "street": "15 Jubilee Park Road",
+      "city": "Hyderabad",
+      "postCode": "500001",
+      "country": "India"
     },
     "clientAddress": {
-      "street": "63 Warwick Road",
-      "city": "Carlisle",
-      "postCode": "CA20 2TG",
-      "country": "United Kingdom"
+      "street": "31 Begumpet Street",
+      "city": "Hyderabad",
+      "postCode": "500016",
+      "country": "India"
     },
     "items": [
       {
@@ -135,20 +135,20 @@
     "paymentDue": "2021-10-14",
     "description": "Re-branding",
     "paymentTerms": 7,
-    "clientName": "Mellisa Clarke",
-    "clientEmail": "mellisa.clarke@example.com",
+    "clientName": "Sunita Singh",
+    "clientEmail": "sunitas@mail.com",
     "status": "pending",
     "senderAddress": {
-      "street": "19 Union Terrace",
-      "city": "London",
-      "postCode": "E1 3EZ",
-      "country": "United Kingdom"
+      "street": "15 Jubilee Park Road",
+      "city": "Hyderabad",
+      "postCode": "500001",
+      "country": "India"
     },
     "clientAddress": {
-      "street": "46 Abbey Row",
-      "city": "Cambridge",
-      "postCode": "CB5 6EG",
-      "country": "United Kingdom"
+      "street": "55 Gachibowli Lane",
+      "city": "Hyderabad",
+      "postCode": "500032",
+      "country": "India"
     },
     "items": [
       {
@@ -172,20 +172,20 @@
     "paymentDue": "2021-10-31",
     "description": "Landing Page Design",
     "paymentTerms": 30,
-    "clientName": "Thomas Wayne",
-    "clientEmail": "thomas@dc.com",
+    "clientName": "Arjun Rao",
+    "clientEmail": "arjunr@mail.com",
     "status": "pending",
     "senderAddress": {
-      "street": "19 Union Terrace",
-      "city": "London",
-      "postCode": "E1 3EZ",
-      "country": "United Kingdom"
+      "street": "15 Jubilee Park Road",
+      "city": "Hyderabad",
+      "postCode": "500001",
+      "country": "India"
     },
     "clientAddress": {
-      "street": "3964  Queens Lane",
-      "city": "Gotham",
-      "postCode": "60457",
-      "country": "United States of America"
+      "street": "40 Jubilee Hills Road",
+      "city": "Hyderabad",
+      "postCode": "500034",
+      "country": "India"
     },
     "items": [
       {
@@ -196,36 +196,5 @@
       }
     ],
     "total": 6155.91
-  },
-  {
-    "id": "FV2353",
-    "createdAt": "2021-11-05",
-    "paymentDue": "2021-11-12",
-    "description": "Logo Re-design",
-    "paymentTerms": 7,
-    "clientName": "Anita Wainwright",
-    "clientEmail": "",
-    "status": "draft",
-    "senderAddress": {
-      "street": "19 Union Terrace",
-      "city": "London",
-      "postCode": "E1 3EZ",
-      "country": "United Kingdom"
-    },
-    "clientAddress": {
-      "street": "",
-      "city": "",
-      "postCode": "",
-      "country": ""
-    },
-    "items": [
-      {
-        "name": "Logo Re-design",
-        "quantity": 1,
-        "price": 3102.04,
-        "total": 3102.04
-      }
-    ],
-    "total": 3102.04
   }
 ]

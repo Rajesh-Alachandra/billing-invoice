@@ -8,8 +8,8 @@ import invoiceSlice from '../redux/invoiceSlice'
 import formatDate from '../functions/formatDate'
 import DeleteModal from './DeleteModal'
 import CreateInvoice from './CreateInvoice'
-
-
+import Logo from "../assets/img/Logo.png";
+import "../css/styles.css";
 function InvoiceInfo({ onDelete }) {
     const navigate = useNavigate()
     const location = useLocation()
@@ -82,6 +82,9 @@ function InvoiceInfo({ onDelete }) {
 
 
                     <div className=' mt-4 rounded-lg w-full  px-6 py-6 bg-white dark:bg-[#1e2139]'>
+                        <div className='logo-div'>
+                                <img src={Logo}/>
+                        </div>
 
                         <div className=' flex flex-col md:flex-row items-start justify-between w-full '>
                             <div>
@@ -137,7 +140,7 @@ function InvoiceInfo({ onDelete }) {
                                 invoice.items.map(item => (
                                     <div className=' justify-between text-lg dark:text-white flex'>
                                         <h1>{item.name}</h1>
-                                        <h1>£{item.total}</h1>
+                                        <h1>₹{item.total}</h1>
                                     </div>
                                 ))
                             }
@@ -164,14 +167,14 @@ function InvoiceInfo({ onDelete }) {
                                         <p className=' text-gray-400 font-thin'>Item price</p>
 
                                         <h1 className=' dark:text-white text-base font-semibold'>
-                                            £{item.price}
+                                            ₹{item.price}
                                         </h1>
                                     </div>
                                     <div className=' space-y-4' >
                                         <p className=' text-gray-400 font-thin'>Total</p>
 
                                         <h1 className=' dark:text-white text-base font-semibold'>
-                                            £{item.total}
+                                            ₹{item.total}
                                         </h1>
                                     </div>
 
@@ -186,7 +189,7 @@ function InvoiceInfo({ onDelete }) {
                             </h3>
 
                             <h1 className=' text-3xl'>
-                                £{invoice.total}
+                                ₹{invoice.total}
                             </h1>
 
                         </div>
