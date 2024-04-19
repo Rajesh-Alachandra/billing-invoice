@@ -35,4 +35,7 @@ justify-content: end;
 text-decoration: none !important;
 }
 
-
+.logout-icon{
+    color: white;
+    font-size: 20px;
+}

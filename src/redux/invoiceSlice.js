@@ -7,11 +7,16 @@ import generateID from "../functions/generateId";
 
 const today = moment().format("YYYY-MM-DD");
 
+
+// Load initial data from localStorage or use an empty array
+const initialData = JSON.parse(localStorage.getItem("invoices")) || [];
+
 const invoiceSlice = createSlice({
   name: "invoces",
 
   initialState: {
-    allInvoice: data,
+    // allInvoice: data, 
+    allInvoice:initialData,
     filteredInvoice: [],
     invoiceById: null,
   },
@@ -51,6 +56,8 @@ const invoiceSlice = createSlice({
       if (invoiceToUpdate) {
         invoiceToUpdate.status = status;
       }
+      // Update localStorage
+  localStorage.setItem("invoices", JSON.stringify(state.allInvoice));
     },
     addInvoice: (state, action) => {
       const {
@@ -96,6 +103,8 @@ const invoiceSlice = createSlice({
         }, 0),
       };
       state.allInvoice.push(finalData);
+       // Update localStorage
+       localStorage.setItem("invoices", JSON.stringify(state.allInvoice));
     },
     editInvoice: (state, action) => {
       const { allInvoice } = state;
@@ -146,6 +155,9 @@ const invoiceSlice = createSlice({
           ...edittedObject
         };
       }
+
+       // Update localStorage
+    localStorage.setItem("invoices", JSON.stringify(allInvoice));
     },
   },
 });

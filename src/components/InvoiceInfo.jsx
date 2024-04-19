@@ -124,7 +124,7 @@ function InvoiceInfo({ onDelete }) {
                   <div>
                     <h3 className=" text-gray-400 font-thin ">Payment Due</h3>
                     <h1 className=" dark:text-white text-lg font-semibold">
-                      {formatDate(invoice.paymentDue)}
+                      {invoice.paymentDue}
                     </h1>
                   </div>
                 </div>
@@ -207,8 +207,13 @@ function InvoiceInfo({ onDelete }) {
                 <h1 className=" text-3xl">₹{invoice.total}</h1>
               </div>
               <div className="btn-div">
-                <div className=" ml-3 text-start  text-white bg-violet-500 hover:opacity-80 p-3 px-7 rounded-full proceed-btn">
-                <button onClick={() => {window.print()}}>Print</button>
+                <div
+                  className=" ml-3 text-start cursor-pointer text-white bg-violet-500 hover:opacity-80 p-3 px-7 rounded-full proceed-btn"
+                  onClick={() => {
+                    window.print();
+                  }}
+                >
+                  <button>Print</button>
                 </div>
               </div>
             </div>
