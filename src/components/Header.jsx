@@ -6,10 +6,12 @@ import useDarkMode from '../hooks/useDarkMode';
 import profile from '../assets/img/blank-profile.png'
 import { motion } from 'framer-motion'
 import Logo from "../assets/img/Logo.png"
-
+import {useNavigate} from "react-router-dom";
 
 function Header() {
 
+  const navigate = useNavigate();
+  
   const [colorTheme, setTheme] = useDarkMode();
   const [darkSide, setDarkSide] = useState(
     colorTheme === "light" ? true : false
@@ -67,7 +69,7 @@ function Header() {
           <div className=' h-full w-full flex flex-col justify-between items-center' >
             {/* Logo */}
 
-            <img src={Logo} className="relative" style={{marginTop:"40px"}}/>
+            <img src={Logo} className="relative" style={{marginTop:"40px"}} onClick={navigate("/center")}/>
 
             {/* Bottom Side */}
             <div>

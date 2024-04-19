@@ -208,7 +208,7 @@ function InvoiceInfo({ onDelete }) {
               </div>
               <div className="btn-div">
                 <div className=" ml-3 text-start  text-white bg-violet-500 hover:opacity-80 p-3 px-7 rounded-full proceed-btn">
-                  <button>Print</button>
+                <button onClick={() => {window.print()}}>Print</button>
                 </div>
               </div>
             </div>
