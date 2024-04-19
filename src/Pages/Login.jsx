@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import Logo from "../assets/img/Logo.png"
+import Logo from "../assets/img/Logo.png";
 const Login = () => {
   const navigate = useNavigate();
 
@@ -22,7 +22,7 @@ const Login = () => {
               src={Logo}
               alt="Your Company"
             />
-            <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+            <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight bg-white dark:bg-[#1E2139] dark:text-white">
               Sign in to your account
             </h2>
           </div>
@@ -32,7 +32,7 @@ const Login = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium leading-6 text-gray-900"
+                  className="block text-sm font-medium leading-6 bg-white dark:bg-[#1E2139] dark:text-white"
                 >
                   Email address
                 </label>
@@ -52,7 +52,7 @@ const Login = () => {
                 <div className="flex items-center justify-between">
                   <label
                     htmlFor="password"
-                    className="block text-sm font-medium leading-6 text-gray-900"
+                    className="block text-sm font-medium leading-6 bg-white dark:bg-[#1E2139] dark:text-white"
                   >
                     Password
                   </label>
@@ -88,7 +88,7 @@ const Login = () => {
               </div>
             </form>
 
-            <p className="mt-10 text-center text-sm text-gray-500">
+            <p className="mt-10 text-center text-sm bg-white dark:bg-[#1E2139] dark:text-white">
               Not a member?{" "}
               <a
                 href="#"
