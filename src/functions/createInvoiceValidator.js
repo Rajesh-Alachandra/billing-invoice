@@ -11,7 +11,7 @@ export function validateSenderCity(city) {
   return true;
 }
 export function validateSenderPostCode(postCode) {
-  return /^\d{5}(-\d{4})?$/.test(postCode); // Basic post code validation
+  return /^\d{6}(-\d{4})?$/.test(postCode); // Basic post code validation
 }
 export function validateSenderCountry(country) {
   if (!country.trim()) {
@@ -21,7 +21,8 @@ export function validateSenderCountry(country) {
 }
 
 export function validateCLientName(name) {
-  return /^[a-zA-Z]+$/.test(name); // Only allow letters
+  return /^[a-zA-Z ]+$/.test(name); // Allow letters and space characters
+  
 }
 export function validateCLientEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); // Basic email validation
@@ -40,7 +41,7 @@ export function validateClientCity(city) {
   return true;
 }
 export function validateClientPostCode(postCode) {
-  return /^\d{5}(-\d{4})?$/.test(postCode); // Basic post code validation
+  return /^\d{6}(-\d{4})?$/.test(postCode); // Basic post code validation
 }
 export function validateClientCountry(country) {
   if (!country.trim()) {

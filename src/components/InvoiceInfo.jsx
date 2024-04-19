@@ -34,7 +34,7 @@ function InvoiceInfo({ onDelete }) {
   }, [invoiceId, onMakePaidClick]);
 
   const onDeleteButtonClick = () => {
-    navigate("/");
+    navigate("/center");
     setIsDeleteModalOpen(false);
     onDelete(invoiceId);
   };
@@ -86,7 +86,7 @@ function InvoiceInfo({ onDelete }) {
                     onClick={onMakePaidClick}
                     className=" ml-3 text-center  text-white bg-[#7c5dfa] hover:opacity-80 p-3 px-7 rounded-full"
                   >
-                    Make as Paid
+                    Mark as Paid
                   </button>
                 )}
               </div>

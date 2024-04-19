@@ -11,7 +11,7 @@ import {useNavigate} from "react-router-dom";
 function Header() {
 
   const navigate = useNavigate();
-  
+
   const [colorTheme, setTheme] = useDarkMode();
   const [darkSide, setDarkSide] = useState(
     colorTheme === "light" ? true : false
@@ -69,7 +69,7 @@ function Header() {
           <div className=' h-full w-full flex flex-col justify-between items-center' >
             {/* Logo */}
 
-            <img src={Logo} className="relative" style={{marginTop:"40px"}} onClick={navigate("/center")}/>
+            <img src={Logo} className="relative" style={{marginTop:"40px"}} onClick={() => navigate("/center")}/>
 
             {/* Bottom Side */}
             <div>

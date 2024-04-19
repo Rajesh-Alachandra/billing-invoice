@@ -17,7 +17,22 @@ margin-bottom: 20px;
     width: 150px;
     margin-top: 20px;
 }
+
 .btn-div{
 display: flex;
 justify-content: end;
 }
+
+.pagination-container{
+    margin-top: 20px;
+}
+
+.pagination-container .visually-hidden{
+    display: none;
+}
+
+.invoice-cards:hover{
+text-decoration: none !important;
+}
+
+
