@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import Logo from "../assets/img/Logo.png";
 const Login = () => {
   const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // Static validation with hardcoded values
+    const validEmail = "rajesh@gmail.com";
+    const validPassword = "12345678";
+
+    if (email !== validEmail || password !== validPassword) {
+      setError("Invalid email or password");
+    } else {
+      setError("");
+      navigate("/center");
+      // Here you can navigate or perform any action upon successful form submission
+      console.log("Form submitted successfully");
+    }
+  };
 
   return (
     <div className="dark:bg-[#141625] scrollbar-hide duration-300 min-h-screen bg-[#f8f8fb] py-[34px] px-2 md:px-8 lg:px-12 lg:py-[72px]  ">
@@ -28,7 +49,7 @@ const Login = () => {
           </div>
 
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form className="space-y-6" action="#" method="POST">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label
                   htmlFor="email"
@@ -42,7 +63,9 @@ const Login = () => {
                     name="email"
                     type="email"
                     autoComplete="email"
-                    // required
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -71,15 +94,17 @@ const Login = () => {
                     name="password"
                     type="password"
                     autoComplete="current-password"
-                    // required
+                    required
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
-
+              {error && <p className="text-red-500">{error}</p>}
               <div>
                 <button
-                  onClick={() => navigate("/center")}
+                  // onClick={() => navigate("/center")}
                   type="submit"
                   className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
